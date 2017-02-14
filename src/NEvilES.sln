@@ -11,6 +11,14 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NEvilES.Testing", "NEvilES.
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NEvilES.Tests", "NEvilES.Tests\NEvilES.Tests.csproj", "{26911FD5-5429-47C2-B7EB-EA1E5FB83212}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NEvilES.SampleMvc", "..\samples\NEvilES.SampleMvc\NEvilES.SampleMvc.csproj", "{658c62ba-06c5-49fd-a1e3-0980b0bb634f}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NEvilES.SampleMvc.Commands", "..\samples\NEvilES.SampleMvc.Commands\NEvilES.SampleMvc.Commands.csproj", "{5ff33b29-acd5-4c17-98bf-e8a5b420ad5c}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NEvilES.SampleMvc.Events", "..\samples\NEvilES.SampleMvc.Events\NEvilES.SampleMvc.Events.csproj", "{4c69134c-aec9-4c1c-a7f4-adcdfc989bcf}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NEvilES.SampleMvc.Domain", "..\samples\NEvilES.SampleMvc.Domain\NEvilES.SampleMvc.Domain.csproj", "{7a40cb43-12a1-4b88-897f-691ad1fc6de9}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -21,18 +29,41 @@ Global
 		{0C014101-EA0A-49B6-AB6B-590B37779F38}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{0C014101-EA0A-49B6-AB6B-590B37779F38}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{0C014101-EA0A-49B6-AB6B-590B37779F38}.Release|Any CPU.Build.0 = Release|Any CPU
+
 		{2EE8059A-8B43-45B9-AA7C-BAB534986C1F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{2EE8059A-8B43-45B9-AA7C-BAB534986C1F}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{2EE8059A-8B43-45B9-AA7C-BAB534986C1F}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{2EE8059A-8B43-45B9-AA7C-BAB534986C1F}.Release|Any CPU.Build.0 = Release|Any CPU
+
 		{55244748-6BF2-4A49-8F5C-5F660C66D63C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{55244748-6BF2-4A49-8F5C-5F660C66D63C}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{55244748-6BF2-4A49-8F5C-5F660C66D63C}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{55244748-6BF2-4A49-8F5C-5F660C66D63C}.Release|Any CPU.Build.0 = Release|Any CPU
+
 		{26911FD5-5429-47C2-B7EB-EA1E5FB83212}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{26911FD5-5429-47C2-B7EB-EA1E5FB83212}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{26911FD5-5429-47C2-B7EB-EA1E5FB83212}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{26911FD5-5429-47C2-B7EB-EA1E5FB83212}.Release|Any CPU.Build.0 = Release|Any CPU
+
+        {658c62ba-06c5-49fd-a1e3-0980b0bb634f}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{658c62ba-06c5-49fd-a1e3-0980b0bb634f}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{658c62ba-06c5-49fd-a1e3-0980b0bb634f}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{658c62ba-06c5-49fd-a1e3-0980b0bb634f}.Release|Any CPU.Build.0 = Release|Any CPU
+
+        {5ff33b29-acd5-4c17-98bf-e8a5b420ad5c}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5ff33b29-acd5-4c17-98bf-e8a5b420ad5c}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5ff33b29-acd5-4c17-98bf-e8a5b420ad5c}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5ff33b29-acd5-4c17-98bf-e8a5b420ad5c}.Release|Any CPU.Build.0 = Release|Any CPU
+
+        {4c69134c-aec9-4c1c-a7f4-adcdfc989bcf}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4c69134c-aec9-4c1c-a7f4-adcdfc989bcf}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4c69134c-aec9-4c1c-a7f4-adcdfc989bcf}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4c69134c-aec9-4c1c-a7f4-adcdfc989bcf}.Release|Any CPU.Build.0 = Release|Any CPU
+
+        {7a40cb43-12a1-4b88-897f-691ad1fc6de9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7a40cb43-12a1-4b88-897f-691ad1fc6de9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7a40cb43-12a1-4b88-897f-691ad1fc6de9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7a40cb43-12a1-4b88-897f-691ad1fc6de9}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

@@ -24,7 +24,9 @@ namespace NEvilES.Tests
             container = context.Container.GetNestedContainer();
             context.Container.Configure(x =>
             {
-                x.For<IConnectionString>().Use(s => new SqlConnectionString("Server=(localdb)\\MSSQLLocalDB;Database=es_test;Integrated Security=true;"));
+
+                //x.For<IConnectionString>().Use(s => new SqlConnectionString("Server=(localdb)\\MSSQLLocalDB;Database=es_test;Integrated Security=true;"));
+                x.For<IConnectionString>().Use(s => new SqlConnectionString("User ID=es_test;Password=root;Host=localhost;Port=5432;Database=es_test;"));
             });
 
             var conn = container.GetInstance<IDbConnection>();

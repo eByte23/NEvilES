@@ -1,0 +1,11 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netstandard1.6</TargetFramework>
+  </PropertyGroup>
+  <ItemGroup>
+		<ProjectReference Include="../../src/NEvilES/NEvilES.csproj" />
+      <ProjectReference Include="../../src/NEvilES.DataStore/NEvilES.DataStore.csproj" />
+  </ItemGroup>
+
+</Project>

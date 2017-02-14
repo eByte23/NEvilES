@@ -5,6 +5,7 @@ using System.Data.SqlClient;
 using NEvilES.Pipeline;
 using NEvilES.Tests.Sample;
 using NEvilES.Tests.Sample.ReadModel;
+using Npgsql;
 using StructureMap;
 
 namespace NEvilES.Tests
@@ -36,7 +37,10 @@ namespace NEvilES.Tests
                 x.For<IReadModel>().Use<TestReadModel>();
 
                 x.For<CommandContext>().Use("CommandContext", s => new CommandContext(new CommandContext.User(Guid.NewGuid(), 666), Guid.NewGuid(), Guid.NewGuid(), new CommandContext.User(Guid.NewGuid(), 007), ""));
-                x.For<IDbConnection>().Use("Connection", s => new SqlConnection(s.GetInstance<IConnectionString>().ConnectionString));
+                //x.For<IDbConnection>().Use("Connection", s => new SqlConnection(s.GetInstance<IConnectionString>().ConnectionString));
+                x.For<IDbConnection>().Use("Connection", s => new NpgsqlConnection(s.GetInstance<IConnectionString>().ConnectionString));
+                //User ID=root;Password=myPassword;Host=localhost;Port=5432;Database=myDataBase;Pooling=true;Min Pool Size=0;Max Pool Size=100;Connection Lifetime=0;
+
                 x.For<IDbTransaction>().Use("Transaction", s => s.GetInstance<IDbConnection>().BeginTransaction());
             });
         }
