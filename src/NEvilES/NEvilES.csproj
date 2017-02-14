@@ -15,18 +15,19 @@
     </PropertyGroup>
 
     <PropertyGroup Condition=" '$(TargetFramework)' == 'netstandard1.5' ">
-        <NetStandardImplicitPackageVersion>1.6.1</NetStandardImplicitPackageVersion>
+        <NetStandardImplicitPackageVersion>1.6.0</NetStandardImplicitPackageVersion>
     </PropertyGroup>
-    
+
     <ItemGroup Condition=" '$(TargetFramework)' == 'netstandard1.5' ">
         <PackageReference Include="Microsoft.CSharp" Version="4.3.0" />
-        <PackageReference Include="Newtonsoft.Json" Version="9.0.1" />
     </ItemGroup>
 
     <ItemGroup Condition=" '$(TargetFramework)' == 'net45' ">
         <Reference Include="System" />
         <Reference Include="Microsoft.CSharp" />
-        <PackageReference Include="Newtonsoft.Json" Version="9.0.1" />
     </ItemGroup>
 
+    <ItemGroup>
+        <PackageReference Include="Newtonsoft.Json" Version="9.0.1" />
+    </ItemGroup>
 </Project>

@@ -1,6 +1,6 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk">
     <PropertyGroup>
-        <TargetFramework>netstandard1.5</TargetFramework>
+        <TargetFrameworks>net45;netstandard1.5</TargetFrameworks>
         <DebugType>portable</DebugType>
         <AssemblyName>NEvilES.Testing</AssemblyName>
         <PackageId>NEvilES.Testing</PackageId>
@@ -13,8 +13,18 @@
         <GenerateAssemblyVersionAttribute>false</GenerateAssemblyVersionAttribute>
         <GenerateAssemblyFileVersionAttribute>false</GenerateAssemblyFileVersionAttribute>
     </PropertyGroup>
+    <PropertyGroup Condition=" '$(TargetFramework)' == 'netstandard1.5' ">
+        <NetStandardImplicitPackageVersion>1.6.0</NetStandardImplicitPackageVersion>
+    </PropertyGroup>
+
     <ItemGroup Condition=" '$(TargetFramework)' == 'netstandard1.5' ">
-        <ProjectReference Include="../NEvilES.DataStore/NEvilES.DataStore.csproj" />
         <PackageReference Include="xunit" Version="2.2.0-beta5-build3474" />
+    </ItemGroup>
+    <ItemGroup Condition=" '$(TargetFramework)' == 'net45' ">
+        <PackageReference Include="xunit" Version="2.1.0" />
+    </ItemGroup>
+
+    <ItemGroup Condition=" '$(TargetFramework)' == 'net45' ">
+        <ProjectReference Include="../NEvilES.DataStore/NEvilES.DataStore.csproj" />
     </ItemGroup>
 </Project>

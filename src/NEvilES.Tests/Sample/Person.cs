@@ -26,10 +26,10 @@ namespace NEvilES.Tests.Sample
             public string Email { get; set; }
         }
 
-        public class Created : IEvent
+        public class Created : Create, IEvent
         {
-            public Guid StreamId { get; set; }
-            public PersonalDetails Person { get; set; }
+            // public Guid StreamId { get; set; }
+            // public PersonalDetails Person { get; set; }
 
             public Created(Guid id, PersonalDetails person)
             {
